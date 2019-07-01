@@ -1,4 +1,4 @@
-var apiKey = "pk.eyJ1IjoiYWZlbGRzdGVpbiIsImEiOiJjanhrdGdjYmsybDlmM3VvOXZodmkydHUxIn0.3A_hKlC-RojK-JnxXyATGg";
+var apiKey = "Get your own here: https://www.mapbox.com/";
 
 var graymap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     attribution: "Map data &copy; <a href='https://www.openstreetmap.org/'>OpenStreetMap</a> contributors, <a href='https://creativecommons.org/licenses/by-sa/2.0/'>CC-BY-SA</a>, Imagery © <a href='https://www.mapbox.com/'>Mapbox</a>",
