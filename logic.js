@@ -16,7 +16,7 @@ graymap.addTo(map);
 
 d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson", function (data) {
 
-    function styleInfo(feature) {
+    function styleSetup(feature) {
         return {
             opacity: 0.8,
             fillOpacity: 1,
@@ -56,7 +56,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
         pointToLayer: function (feature, latlng) {
             return L.circleMarker(latlng);
         },
-        style: styleInfo,
+        style: styleSetup,
         onEachFeature: function (feature, layer) {
             layer.bindPopup("Magnitude: " + feature.properties.mag + "<br>Location: " + feature.properties.place);
         }
